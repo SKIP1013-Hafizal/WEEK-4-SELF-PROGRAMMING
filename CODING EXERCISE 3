@@ -1,0 +1,39 @@
+package myScanner;
+
+import java.util.Scanner;
+
+public class Exercise3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner (System.in);
+		System.out.println("Enter an integer : ");
+		int number = sc.nextInt();
+		System.out.println("Enter Double Value : ");
+		double value = sc.nextDouble();
+		
+		int increment = number+1;
+		double decrement = value-1;
+		
+		System.out.println("Using nextInt(): "+number);
+		System.out.println("Using nextDouble(): "+value);
+		
+		System.out.println("Using nextInt() increment by 1: "+increment);
+		System.out.println("Using nextDouble() decrement by 1: "+decrement);
+		
+		int up = increment+5;
+		double down  = decrement-5;
+		
+		System.out.println("Using nextInt() increment by 5: "+up);
+		System.out.println("Using nextDouble() decrement by 5: "+down);
+		
+		int modup = up%10;
+		double moddown  = down%10;
+		
+		System.out.println("Using nextInt() mod 10: "+modup);
+		System.out.printf("Using nextDouble() mod 10: %.2f",moddown);
+		
+
+	}
+
+}
