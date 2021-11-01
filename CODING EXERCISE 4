@@ -1,0 +1,20 @@
+package myScanner;
+
+// Demonstrates the use of the nextLine method of the Scanner class to read a string from the user
+// ************************************************************************************************
+
+import java.util.Scanner;
+public class Exercise4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String message;
+		Scanner sc=new Scanner (System.in);
+		System.out.println("Enter a line of text : ");
+		message=sc.nextLine();
+		System.out.println("You entered: \""+message+ "\" ");
+		
+		
+	}
+
+}
