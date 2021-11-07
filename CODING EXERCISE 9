@@ -1,0 +1,28 @@
+package myScanner;
+
+import java.util.Scanner;
+
+public class Exercise9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double fixsalary = 1200.00;
+		double bonus;
+		String name;
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Please enter your name : ");
+		name=sc.nextLine();
+		System.out.println("Please enter this month bonus : ");
+		bonus=sc.nextDouble();
+		
+		double salary= 2*(fixsalary+bonus);
+		
+		System.out.println("My name is "+ name);
+		System.out.printf("Your salary for this month is RM %.2f", salary);
+
+	}
+
+}
